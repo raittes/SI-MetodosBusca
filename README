@@ -1,0 +1,36 @@
+Trabalho 1 - PROBLEMA DOS CANIBAIS E EXPLORADORES
+
+03 exploradores e 03 canibais desejam atravessar um rio utilizando um pequeno
+barco a motor o qual somente pode ser dirigido por um dos exploradores ou pelo
+chefe dos canibais. Se no barco somente cabem duas pessoas e além disso sabe-se que
+quando o número de canibais é superior ao de exploradores, estes são devorados por
+aqueles, qual será a sequência de viagens que permita que os 06 passem para o outro lado do rio?
+
+Estados: o estado inicial ==> (3, 3, 1)
+sendo: (3 exploradores, 3 canibais, 1 barco na beira inicial do rio)
+Operadores: a partir de cada estado, os operadores pegam um explorador, etc.
+Estado Objetivo: (0, 0, 0)
+Custo da trajetória: número de viagens
+Objetivo: chegar ao estado (0,0,0) com o menor número de viagens.
+
+Importante: para resolução deste problema deve ser utilizada um método de busca
+(cega, parcial ou informada).
+Se necessário pode ser utilizado um método não estudado em sala. Neste caso a
+equipe deve procurar o professor (até dia 28/04) e justificar sua escolha (justificativa
+deve apresentar fundamentação teórica).
+
+Avaliação:
+Número de components por grupo: máximo 3 (notas individuais)
+Data de entrega e defesa: 11 e 12 /05
+
+Será organizado um cronograma com horário para apresentações (em caso de conflito
+de horários haverá sorteio).
+Deverá ser entregue:
+- o código fonte (JAVA) via moodle.
+- relatório IMPRESSO (1 dia ANTES da apresentação).
+
+O relatório deverá conter a justificativa da escolha do método de busca utilizado (de
+forma clara e objetiva).
+Importante: o relatório deverá estar de acordo com a implementação apresentada.
+Implementações consideradas parecidas dividirão a nota pelo número de equipes que
+apresentarem a solução.
