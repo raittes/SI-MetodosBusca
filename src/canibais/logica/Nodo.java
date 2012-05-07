@@ -1,13 +1,18 @@
 package canibais.logica;
 
-import java.util.List;
-
 public class Nodo {
 	private Estado estado;
 	private Nodo pai;
-	private Acition action;
+	private Action action;
 	private int profundidade;
 	private int custo;
+	public Nodo(Nodo pai, Action action, Estado estado, int profundidade, int custo) {
+		this.pai = pai;
+		this.setAction(action);
+		this.estado = estado;
+		this.profundidade = profundidade;
+		this.custo = custo;
+	}
 	public Estado getEstado() {
 		return estado;
 	}
@@ -31,6 +36,12 @@ public class Nodo {
 	}
 	public void setCusto(int custo) {
 		this.custo = custo;
+	}
+	public Action getAction() {
+		return action;
+	}
+	public void setAction(Action action) {
+		this.action = action;
 	}
 	
 

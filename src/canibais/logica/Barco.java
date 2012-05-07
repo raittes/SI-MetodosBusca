@@ -10,6 +10,8 @@ public class Barco {
 	public static final int MARGEM_DIREITA_ZERO = 5;
 	
 	private int estado;
+	private Pessoa a;
+	private Pessoa b;
 	public Barco(int estado){
 		this.setEstado(estado);
 	}
@@ -18,5 +20,17 @@ public class Barco {
 	}
 	public void setEstado(int estado) {
 		this.estado = estado;
+	}
+	public Pessoa getA() {
+		return a;
+	}
+	public void setA(Pessoa a) {
+		this.a = a;
+	}
+	public Pessoa getB() {
+		return b;
+	}
+	public void setB(Pessoa b) {
+		this.b = b;
 	}
 }
