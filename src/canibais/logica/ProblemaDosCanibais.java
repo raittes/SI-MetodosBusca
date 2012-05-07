@@ -53,9 +53,10 @@ public class ProblemaDosCanibais {
 		expande(new Nodo(nodo, actiontmp, estadotmp, nodo.getProfundidade()+1, nodo.getCusto()+1));
 	}
 	private void expande(Nodo nodo) {
-		if(nodo.getEstado().equal(objetivo)&&nodo.getProfundidade()>20){			
+		if(nodo.getEstado().equal(objetivo)&&nodo.getProfundidade()>10){
+			//aqui limita a profundidade minima em que o nó objetivo pode ser encontrado
 			sucessos.add(nodo);
-		}else if(nodo.getProfundidade()<22){
+		}else if(nodo.getProfundidade()<13){
 			//aqui limita a profundidade maxima que a busca em largura irá procurar.
 			for (Nodo tempNodo : getPossibilidadesValidas(geraAllPossibilidades(nodo))) {
 					expande(tempNodo);																												
