@@ -13,6 +13,13 @@ public class Nodo {
 		this.profundidade = profundidade;
 		this.custo = custo;
 	}
+	public Nodo(Nodo pai, int action, Estado estado) {
+		this.pai = pai;
+		this.action = new Action(action);
+		this.estado = estado;
+		this.profundidade = pai.getProfundidade()+1;
+		this.custo = pai.getCusto()+1;
+	}
 	public Estado getEstado() {
 		return estado;
 	}

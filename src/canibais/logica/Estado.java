@@ -4,11 +4,12 @@ public class Estado {
 	private int nCanibaisEsquerda;
 	private int nExploradoresEsquerda;
 	private int barcosAEsquerda;
-	private int chefeNoBarco;
-	public Estado(int nCanibaisEsquerda, int nExploradoresEsquerda, int barcosAEsquerda, boolean b) {
+	private int chefeNaEsquerda;
+	public Estado(int nCanibaisEsquerda, int nExploradoresEsquerda, int barcosAEsquerda, int chefeNaEsquerda) {
 		this.nCanibaisEsquerda = nCanibaisEsquerda;
 		this.nExploradoresEsquerda = nExploradoresEsquerda;
 		this.barcosAEsquerda = barcosAEsquerda;
+		this.chefeNaEsquerda = chefeNaEsquerda;
 	}
 	public int getnExploradoresEsquerda() {
 		return nExploradoresEsquerda;
@@ -36,11 +37,11 @@ public class Estado {
 		}
 		return false;
 	}
-	public int getChefeNoBarco() {
-		return chefeNoBarco;
+	public int getChefeNaEsquerda() {
+		return chefeNaEsquerda;
 	}
-	public void setChefeNoBarco(int chefeNoBarco) {
-		this.chefeNoBarco = chefeNoBarco;
+	public void setChefeNaEsquerda(int chefeNaEsquerda) {
+		this.chefeNaEsquerda = chefeNaEsquerda;
 	}
 
 }
