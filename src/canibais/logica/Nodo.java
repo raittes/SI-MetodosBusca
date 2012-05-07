@@ -50,6 +50,16 @@ public class Nodo {
 	public void setAction(Action action) {
 		this.action = action;
 	}
+	public String toString(){
+		return "("+estado.getnCanibaisEsquerda()+", "+estado.getnExploradoresEsquerda()
+				+", "+estado.getBarcosAEsquerda()+", "+estado.getChefeNaEsquerda()+") - "+(action==null?" ESTÃO NA ":action+" PARA ")+ (estado.getBarcosAEsquerda()==1?"ESQUERDA ":"DIREITA ")+verificaSeChefePresente();
+	}
+	private String verificaSeChefePresente() {
+		if(pai!=null){
+			return estado.getChefeNaEsquerda()==pai.getEstado().getChefeNaEsquerda()?"":"(Chefe dos canibais no barco.)";			
+		}
+		return "";
+	}
 	
 
 }
