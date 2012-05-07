@@ -9,7 +9,7 @@ public class Principal {
 	 */
 	public static void main(String[] args) {
 		ProblemaDosCanibais problema = new ProblemaDosCanibais();
-		problema.printSolucaoComSubidaEncosta();
+		problema.printBuscaCegaLarguraProfundidadeLimitada();
 
 	}
 
